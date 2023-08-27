@@ -1,10 +1,10 @@
 version: '3.3'
 services:
-  svr_persistor:
+  srv_persistor:
     build:
       context: ./
 
-      dockerfile: ./svr_persistor/dockerfile
+      dockerfile: ./srv_persistor/dockerfile
 
     ports:
       - "50051:50051"
