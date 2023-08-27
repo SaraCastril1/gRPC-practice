@@ -8,4 +8,14 @@ services:
 
     ports:
       - "50051:50051"
-    
+
+
+
+  srv_reader:
+    build:
+      context: ./
+
+      dockerfile: ./srv_reader/dockerfile
+
+    depends_on:
+      - srv_persistor
