@@ -13,7 +13,7 @@ message Moneda_request{
     string low = 4;
     string close = 5;
     //De que microservicio proviene el mensaje
-    string source = 6;
+    //string source = 6;
 }
 
 message Moneda_response{

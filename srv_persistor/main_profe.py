@@ -25,7 +25,7 @@ class Monedas(monedas_pb2_grpc.MonedasServicer):
       
       def SendMoneda(self, request, context):
             print(request.date)
-            print(request.source)
+            #print(request.source)
             response = monedas_pb2.Moneda_response(data=request.open)
             return response
    

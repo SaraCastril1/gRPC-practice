@@ -11,7 +11,7 @@ def serve():
 	#Codigo estra -------------------------------------------------
 	file_repository = File_repository('/tmp/data/BTCUSD_M5.csv')
 	readed_data = file_repository.get_data()
-	source = os.environ['HOST']
+	#source = os.environ['HOST']
 	#--------------------------------------------------------------
 	for row in readed_data:
 		#Aqui se debe levantar la conexion
@@ -20,7 +20,7 @@ def serve():
 			#request = monedas_pb2.EmptyMessage()
 			#response = stub.PingMonedas(request)
 			#print("Recived: ", response.ack)
-			request = monedas_pb2.Moneda_request(data = row[0], open = row[1], high = row[2], low = row[3], close = row[4], source = source)
+			request = monedas_pb2.Moneda_request(data = row[0], open = row[1], high = row[2], low = row[3], close = row[4])
 			response = stub.SendMoneda(request)
 			print("Recived: ", response.data)
 			
