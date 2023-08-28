@@ -9,7 +9,7 @@ HOST = '[srv_persistor]:50051'
 def serve():
 	#Codigo estra -------------------------------------------------
 	file_repository = File_repository('tmp/data/BTCUSD_M5.csv')
-	readed_data = file_repository.__read_data()
+	readed_data = file_repository.get_data()
 	#--------------------------------------------------------------
 	for row in readed_data:
 		#Aqui se debe levantar la conexion

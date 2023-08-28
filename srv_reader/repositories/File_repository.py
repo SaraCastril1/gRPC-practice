@@ -32,6 +32,10 @@ class File_repository():
             raise Exception('Error while reading data: ', str(exception))
         finally:
             self.__close_file
+            
+
+    def get_data(self):
+        return self.__read_data()
 
 
 
