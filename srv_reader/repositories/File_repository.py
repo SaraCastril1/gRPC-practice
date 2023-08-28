@@ -1,11 +1,12 @@
 import csv
 
 class File_repository():
-    __file_path = ""
-    __file_open = None
+    # __file_path = ""
+    # __file_open = None
 
     def __init__(self, file_path):
         self.__file_path = file_path
+        self.__file_open = None
 
     def __open_file(self)->None:
         if(self.__file_open == None):
