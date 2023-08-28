@@ -20,7 +20,7 @@ def serve():
 			#request = monedas_pb2.EmptyMessage()
 			#response = stub.PingMonedas(request)
 			#print("Recived: ", response.ack)
-			request = monedas_pb2.Moneda_request(data = row[0], open = row[1], high = row[2], low = row[3], close = row[4])
+			request = monedas_pb2.Moneda_request(date = row[0], open = row[1], high = row[2], low = row[3], close = row[4])
 			response = stub.SendMoneda(request)
 			print("Recived: ", response.data)
 			

@@ -7,7 +7,7 @@ message PingMonedasResponse{
 }
 
 message Moneda_request{
-    string data = 1;
+    string date = 1;
     string open = 2;
     string high = 3;
     string low = 4;
