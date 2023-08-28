@@ -22,6 +22,12 @@ class Monedas(monedas_pb2_grpc.MonedasServicer):
             #creamos un objeto respuesta
             response = monedas_pb2.PingMonedasResponse(ack='1')
             return response
+      
+      def SendMoneda(self, request, context):
+            print(request.date)
+            print(request.source)
+            response = monedas_pb2.Moneda_response(data=request.open)
+            return response
    
 #    def AddProduct(self, request, context):
 #       print("Request is received: " + str(request))
