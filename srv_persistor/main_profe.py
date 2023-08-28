@@ -3,6 +3,7 @@ from concurrent import futures
 import grpc
 import monedas_pb2
 import monedas_pb2_grpc
+#CONSUMER
 
 HOST = '[::]:50051'
 

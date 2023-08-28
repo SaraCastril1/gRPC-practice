@@ -2,6 +2,7 @@ import grpc
 import os
 import monedas_pb2
 import monedas_pb2_grpc
+#PRODUCER
 
 from repositories.File_repository import File_repository
 
