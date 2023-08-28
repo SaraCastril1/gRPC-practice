@@ -11,7 +11,7 @@ def serve():
 	#Codigo estra -------------------------------------------------
 	file_repository = File_repository('/tmp/data/BTCUSD_M5.csv')
 	readed_data = file_repository.get_data()
-	source = os.environ['HOSTNAME']
+	source = os.environ['HOST']
 	#--------------------------------------------------------------
 	for row in readed_data:
 		#Aqui se debe levantar la conexion
