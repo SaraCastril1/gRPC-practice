@@ -1,7 +1,7 @@
 import csv
 
 class File_repository():
-    __file_path = ''
+    __file_path = ""
     __file_open = None
 
     def __init__(self, file_path):
@@ -32,7 +32,7 @@ class File_repository():
             raise Exception('Error while reading data: ', str(exception))
         finally:
             self.__close_file
-            
+
 
     def get_data(self):
         return self.__read_data()
