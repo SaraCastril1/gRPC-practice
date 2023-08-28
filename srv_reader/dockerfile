@@ -1,6 +1,8 @@
 FROM python:3.8-slim
 
 COPY ./srv_reader /home/app
+#Para leer los ficheros
+COPY ./data/ /tmp/data/
 
 WORKDIR /home/app
 
