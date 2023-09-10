@@ -1,0 +1,4 @@
+#Se corre en tiempo de contrucción
+FROM ubuntu:latest
+
+RUN touch /usr/src/hola.txt
